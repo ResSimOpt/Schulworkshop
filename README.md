@@ -3,7 +3,7 @@
 Hier finden Sie Unterlagen des Schulworkshops 2025 an der FH Steyr.
 
 ## 📂 Präsentation:
-[Präsentation](Schuleworkshop_2025.pdf)
+[Präsentation](Schulworkshop_2025.pdf?raw=true)
 
 ## 🎥 Videos:
 - [▶️ Kanban VR Modell](Kanban_VR_Modell_compressed.mp4?raw=true)
