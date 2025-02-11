@@ -5926,10 +5926,6 @@ return producType;
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[//Set Color
-//agent.boxOpened.setColor("MA_Box", Color.red);]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -7342,7 +7338,7 @@ return producType;
 if (uncertaintyProcessing_Rob1_Rob2[0] == 0) {
     agent.processingTime_Roboter1 = (processingTime_Rob1_Rob2[0] * agent.kanbanLotsize) + setUpTime[0];
 } else {
-    agent.processingTime_Roboter1 = exponential(
+    agent.processingTime_Roboter1 = exponential( 1 /
         (processingTime_Rob1_Rob2[0] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob1
     ) + setUpTime[0];
 }]]></Code>
@@ -9171,8 +9167,7 @@ utilizationRobot_1.update();]]></Code>
 						<Parameter>
 							<Name><![CDATA[operationTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[(uncertaintyProcessing_Rob1_Rob2[1] == 0) ? processingTime_Rob1_Rob2[1] : 
-exponential( processingTime_Rob1_Rob2[1], 0, RNGProcessingTime_Rob2);]]></Code>
+								<Code><![CDATA[agent.processingTime_Roboter2]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -9316,9 +9311,9 @@ exponential( processingTime_Rob1_Rob2[1], 0, RNGProcessingTime_Rob2);]]></Code>
 							<Value Class="CodeValue">
 								<Code><![CDATA[// Calculate Processing Time
 if (uncertaintyProcessing_Rob1_Rob2[1] == 0) {
-    agent.processingTime_Roboter1 = (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize) + setUpTime[1];
+    agent.processingTime_Roboter2 = (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize) + setUpTime[1];
 } else {
-    agent.processingTime_Roboter1 = exponential(
+    agent.processingTime_Roboter2 = exponential( 1 /
         (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob1
     ) + setUpTime[1];
 }]]></Code>
@@ -10886,8 +10881,8 @@ exponential(orderRate, 0,  RNGArrivalRate);]]></Code>
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[(uncertaintyOrder == 0) ? 1 / orderRate : 
-exponential(1/ orderRate, 0,  RNGArrivalRate);]]></Code>
+								<Code><![CDATA[(uncertaintyOrder == 0) ? (1 / orderRate) : 
+exponential(orderRate, 0,  RNGArrivalRate);]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -22743,7 +22738,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<OccurrenceAtTime>true</OccurrenceAtTime>
 						<OccurrenceDate>1438243200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0.01]]></Code>
+							<Code><![CDATA[0]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
@@ -23272,7 +23267,7 @@ main.currentItemStock++;
 batch.prodType = prodType;
 batch.kanbanLotsize = batchToKanbanBox.batchSize;
 batch.productionStartTimeStamp_min = time();
-main.currentItemStock += main.kanbanLotsize_Item[prodType];
+main.currentItemStock += batch.kanbanLotsize;
 main.itemStock.update();]]></Code>
 							</Value>
 						</Parameter>
@@ -23869,6 +23864,9 @@ main.customStation_p2;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.prodType = prodType;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -24093,7 +24091,7 @@ main.nodeItemPickUp_p2;]]></Code>
 						<Parameter>
 							<Name><![CDATA[quantity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[main.kanbanLotsize_Component[prodType]]]></Code>
+								<Code><![CDATA[main.kanbanLotsize_Item[prodType]]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -26236,7 +26234,7 @@ if (prodType == 0) {
 						<OccurrenceAtTime>true</OccurrenceAtTime>
 						<OccurrenceDate>1438243200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0.01]]></Code>
+							<Code><![CDATA[0]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
@@ -26477,7 +26475,6 @@ if (prodType == 0) {
 							<Value Class="CodeValue">
 								<Code><![CDATA[//Assign Prod Type
 agent.prodType = prodType;
-
 main.currentComponentStock++;]]></Code>
 							</Value>
 						</Parameter>
@@ -26739,7 +26736,7 @@ main.currentComponentStock++;]]></Code>
 batch.prodType = prodType;
 batch.kanbanLotsize = batchToKanbanBox.batchSize;
 batch.productionStartTimeStamp_min = time();
-main.currentComponentStock += main.kanbanLotsize_Item[prodType];
+main.currentComponentStock += batch.kanbanLotsize;
 main.componentStock.update();]]></Code>
 							</Value>
 						</Parameter>
@@ -26846,6 +26843,17 @@ main.componentProductionLeadTime.add(batch.componentProductionLeadTime_min);]]><
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[//Set Color
+if (prodType == 0) {
+    agent.boxCosed.setColor("MA_material_27", Color.GREEN);
+} else if (prodType == 1) {
+   agent.boxCosed.setColor("MA_material_27", Color.BLUE);
+} else {
+    agent.boxCosed.setColor("MA_material_27", Color.WHITE);
+}
+]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[sameAsBatchLocation]]></Name>
@@ -27085,18 +27093,14 @@ main.componentProductionLeadTime.add(batch.componentProductionLeadTime_min);]]><
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onPickup]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[//Set Color
-agent.boxCosed.setColor("MA_material_27", Color.red);
-
-//Reduce Current Stock
-main.currentComponentStock -= container.kanbanLotsize;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[//start refillment
+								<Code><![CDATA[//Reduce Current Stock
+main.currentComponentStock -= container.kanbanLotsize;
+
+//start refillment
 newComponent.inject(container.kanbanLotsize);]]></Code>
 							</Value>
 						</Parameter>
@@ -27420,6 +27424,11 @@ main.componentStorage_p2;]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[//Assign Prod Type
+agent.prodType = prodType;
+traceln("-----");]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
@@ -27776,7 +27785,7 @@ if(ExpectedOrderRate.getValue() == 0){
 if(ExpectedProcessingTimeRob1.getValue() == 0){
 	root.processingTime_Rob1_Rob2[0] = 0.5;
 	root.textRateTimeRobot1.setText("Slow");
-	root.textRateTimeRobot1.setColor(darkGreen);
+	root.textRateTimeRobot1.setColor(green);
 	root.costValues[3] = 3;
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[0] = 0.4;
@@ -27793,7 +27802,7 @@ if(ExpectedProcessingTimeRob1.getValue() == 0){
 if(ExpectedProcessingTimeRob2.getValue() == 0){
 	root.processingTime_Rob1_Rob2[1] = 0.5;
 	root.textRateTimeRobot2.setText("Slow");
-	root.textRateTimeRobot2.setColor(darkGreen);
+	root.textRateTimeRobot2.setColor(green);
 	root.costValues[4] = 3;	
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[1] = 0.4;
@@ -27854,6 +27863,40 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1739224994401</Id>
+					<Name><![CDATA[checkParametrization]]></Name>
+					<X>290</X><Y>360</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[//C0
+if((sliderLotSizeC0.getIntValue() * sliderNumberKanbanC0.getIntValue())
+	< sliderLotSizeI0.getIntValue()){
+	markerLotSizeC0.setFillColor(red);
+}else{
+	markerLotSizeC0.setFillColor(darkGreen);
+}
+//C1
+if((sliderLotSizeC1.getIntValue() * sliderNumberKanbanC1.getIntValue())
+	< sliderLotSizeI1.getIntValue()){
+	markerLotSizeC1.setFillColor(red);
+}else{
+	markerLotSizeC1.setFillColor(green);
+}
+//C2
+if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
+	< sliderLotSizeI2.getIntValue()){
+	markerLotSizeC2.setFillColor(red);
+}else{
+	markerLotSizeC2.setFillColor(green);
+}]]></Body>
+				</Function>
+			</Functions>
 
 			<Presentation>
 				<Rectangle>
@@ -28311,6 +28354,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -28355,6 +28399,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -28399,6 +28444,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -28443,6 +28489,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -28487,6 +28534,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -28531,6 +28579,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -29009,6 +29058,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -29053,6 +29103,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -29097,6 +29148,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
@@ -29141,6 +29193,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -29185,6 +29238,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -29229,6 +29283,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<BasicProperties Width="120" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
@@ -29668,6 +29723,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="40" Height="25">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -29710,6 +29766,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
@@ -29835,6 +29892,93 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 						<Style>1</Style>
 					</Font>
 					<Alignment>CENTER</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1739192665715</Id>
+					<Name><![CDATA[markerLotSizeC0]]></Name>
+					<X>540</X><Y>400</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>30</Width>
+					<Height>30</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16744448</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1739225105871</Id>
+					<Name><![CDATA[markerLotSizeC1]]></Name>
+					<X>540</X><Y>470</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>30</Width>
+					<Height>30</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16744448</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1739225114246</Id>
+					<Name><![CDATA[markerLotSizeC2]]></Name>
+					<X>540</X><Y>540</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>30</Width>
+					<Height>30</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-16744448</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1739225151422</Id>
+					<Name><![CDATA[text59]]></Name>
+					<X>535</X><Y>370</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Check]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
 				</Text>
 			</Presentation>
 
