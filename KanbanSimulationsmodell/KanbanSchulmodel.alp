@@ -7,9 +7,9 @@
 <AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.2.202410172110" AlpVersion="8.9.2">
 <Model>
 	<Id>1737549486347</Id>
-	<Name><![CDATA[KanbanSchulmodel]]></Name>
+	<Name><![CDATA[KanbanModell]]></Name>
 	<EngineVersion>6</EngineVersion>
-	<JavaPackageName><![CDATA[kanbanschulmodel]]></JavaPackageName>
+	<JavaPackageName><![CDATA[kanban]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
 	
 	<Folders>
@@ -245,7 +245,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911261099</Id>
 					<Name><![CDATA[componentStockCosts]]></Name>
-					<X>290</X><Y>765</Y>
+					<X>290</X><Y>790</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -257,7 +257,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911364986</Id>
 					<Name><![CDATA[itemStockCosts]]></Name>
-					<X>290</X><Y>795</Y>
+					<X>290</X><Y>815</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -269,7 +269,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911374518</Id>
 					<Name><![CDATA[tardinessCosts]]></Name>
-					<X>290</X><Y>825</Y>
+					<X>290</X><Y>840</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -281,7 +281,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911425493</Id>
 					<Name><![CDATA[machineOperationCosts]]></Name>
-					<X>290</X><Y>855</Y>
+					<X>290</X><Y>865</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -293,7 +293,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911582500</Id>
 					<Name><![CDATA[totalCosts]]></Name>
-					<X>290</X><Y>715</Y>
+					<X>290</X><Y>710</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -331,6 +331,18 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Name><![CDATA[simTime_min]]></Name>
 					<X>1090</X><Y>2120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1739288192501</Id>
+					<Name><![CDATA[totalCostsPerPeriod]]></Name>
+					<X>290</X><Y>735</Y>
+					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -571,7 +583,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[{0.05, 0.05}]]></Code>
+							<Code><![CDATA[{0.1, 0.1}]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1738768409660</Id>
@@ -618,7 +630,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterOrder_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -628,12 +640,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -651,7 +663,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitOrder_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -661,12 +673,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -684,7 +696,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitOrder_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -694,12 +706,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -717,7 +729,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitOrder_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -727,12 +739,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -750,7 +762,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -760,7 +772,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[customerEnd]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -785,7 +797,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitProduct_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -795,12 +807,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -818,7 +830,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitProduct_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -828,12 +840,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -851,7 +863,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitProduct_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -861,12 +873,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -884,7 +896,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[rawMaterial]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -894,7 +906,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queueComponent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -917,17 +929,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -950,7 +962,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterOrder_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -960,12 +972,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -983,17 +995,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterOrder_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1016,7 +1028,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterCustomer_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1026,7 +1038,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1049,7 +1061,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterCustomer_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1059,7 +1071,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1082,7 +1094,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterCustomer_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1092,7 +1104,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1115,7 +1127,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitCustomerArrival]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1125,7 +1137,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[source]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1148,7 +1160,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[queueComponent]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1158,7 +1170,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyorEnterComponent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1181,7 +1193,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyorEnterComponent]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1191,7 +1203,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1214,7 +1226,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1224,7 +1236,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processComponentByRobot1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1247,7 +1259,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processComponentByRobot1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1257,7 +1269,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1280,7 +1292,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1290,7 +1302,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1313,7 +1325,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponent_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1323,7 +1335,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1346,7 +1358,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponent_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1356,7 +1368,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1379,7 +1391,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1389,7 +1401,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1412,7 +1424,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1422,12 +1434,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -1445,7 +1457,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1455,7 +1467,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1478,7 +1490,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1488,12 +1500,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -1511,7 +1523,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1521,7 +1533,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1544,7 +1556,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveByCrane_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1554,12 +1566,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -1577,7 +1589,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_processingItems_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1587,7 +1599,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1611,7 +1623,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItemToRob_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1621,7 +1633,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1644,7 +1656,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processItemByRobot2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1654,7 +1666,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItemToRob_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1679,7 +1691,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1689,7 +1701,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processItemByRobot2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1712,7 +1724,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitItemProcessed]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1722,7 +1734,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1745,7 +1757,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1755,7 +1767,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterProduct_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1778,17 +1790,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1811,7 +1823,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterProduct_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1821,7 +1833,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1844,7 +1856,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1854,12 +1866,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -1877,7 +1889,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterProduct_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1887,7 +1899,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1910,7 +1922,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1920,12 +1932,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[in_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -1943,7 +1955,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_processingItems_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1953,7 +1965,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1976,7 +1988,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enter_processingItems_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -1986,7 +1998,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2009,7 +2021,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[split]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2019,7 +2031,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2044,7 +2056,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2054,7 +2066,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[split]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2077,7 +2089,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2087,7 +2099,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitCustomer_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2110,7 +2122,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2120,7 +2132,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitCustomer_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2143,7 +2155,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitCustomer_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2153,7 +2165,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2176,7 +2188,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2186,7 +2198,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[customerEnd]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2211,7 +2223,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkToEnd_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2221,7 +2233,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[customerEnd]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2244,17 +2256,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponentOrder_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2277,7 +2289,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponentOrder_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2287,12 +2299,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2310,7 +2322,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponent_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2320,12 +2332,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2343,17 +2355,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponentOrder_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2376,7 +2388,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponentOrder_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2386,12 +2398,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2409,7 +2421,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponent_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2419,12 +2431,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p1]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2442,17 +2454,17 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_orders]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponentOrder_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2475,7 +2487,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitComponent_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2485,12 +2497,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[out_port_materials]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2508,7 +2520,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponentOrder_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2518,12 +2530,12 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[kanbanComponent_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[in_port_orders]]></ItemName>
 					</TargetConnectableItemReference>
@@ -2541,7 +2553,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterComponent_p0]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2551,7 +2563,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyComponent_p0]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2574,7 +2586,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[walkTo_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2584,7 +2596,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[split]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2609,7 +2621,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[split]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2619,7 +2631,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exit]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2642,7 +2654,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitToMatch]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2652,7 +2664,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[split]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2675,7 +2687,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterCopy]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2685,7 +2697,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[matchCopyAgent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2708,7 +2720,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[enterFromProcessFlow]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2718,7 +2730,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[matchCopyAgent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2741,7 +2753,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[KPISink]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2751,7 +2763,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[matchCopyAgent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2774,7 +2786,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[exitWalkTo]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2784,7 +2796,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[matchCopyAgent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2807,7 +2819,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p1]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2817,7 +2829,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItemToRob_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2840,7 +2852,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItemToRob_p2]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2850,7 +2862,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processItemByRobot2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2873,7 +2885,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem4]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2883,7 +2895,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[moveToProdItem_p2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2906,7 +2918,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[conveyItem4]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -2916,7 +2928,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[processItemByRobot2]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -2974,12 +2986,10 @@ while (iterator.hasNext()) {
 }
 
 // Calculate costs
-
 componentStockCosts = roundToDecimal(componentStock.mean() * simTime_min * costValues[0], 2);
 itemStockCosts = roundToDecimal(itemStock.mean() * simTime_min * costValues[1], 2);
 tardinessCosts = roundToDecimal(tardiness.mean() * simTime_min * costValues[2], 2);
-machineOperationCosts = roundToDecimal(simTime_min * costValues[3], 2) + roundToDecimal(simTime_min * costValues[4], 2); //Robot 1 and Robot 2
-
+machineOperationCosts = roundToDecimal(simTime_min * costValues[3] * utilizationRobot_1.mean(), 2) + roundToDecimal(simTime_min * costValues[4] * utilizationRobot_2.mean(), 2); //Robot 1 and Robot 2
 
 totalCosts = roundToDecimal(
     componentStockCosts +
@@ -2987,6 +2997,8 @@ totalCosts = roundToDecimal(
    	tardinessCosts +
     machineOperationCosts, 2
 );
+
+totalCostsPerPeriod = roundToDecimal(totalCosts / simTime_min, 2);
 
 //Stop Simulation
 finishSimulation();]]></Action>
@@ -6075,12 +6087,12 @@ return producType;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 							<ItemName><![CDATA[1737549610164]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -6127,12 +6139,12 @@ return producType;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 							<ItemName><![CDATA[1737549610164]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -6179,12 +6191,12 @@ return producType;
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 							<ItemName><![CDATA[1737549610164]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -8479,12 +8491,12 @@ utilizationRobot_1.update();]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[Forklift]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[Forklift]]></ClassName>
 											<ItemName><![CDATA[1737714926920]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -9314,7 +9326,7 @@ if (uncertaintyProcessing_Rob1_Rob2[1] == 0) {
     agent.processingTime_Roboter2 = (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize) + setUpTime[1];
 } else {
     agent.processingTime_Roboter2 = exponential( 1 /
-        (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob1
+        (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob2
     ) + setUpTime[1];
 }]]></Code>
 							</Value>
@@ -9323,7 +9335,7 @@ if (uncertaintyProcessing_Rob1_Rob2[1] == 0) {
 							<Name><![CDATA[onSeize]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[//Utilization
-utilizationRobot_2.add(1, time());
+utilizationRobot_2.add(0, time());
 utilizationRobot_2.update();]]></Code>
 							</Value>
 						</Parameter>
@@ -10697,12 +10709,12 @@ utilizationRobot_2.update();]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 							<ItemName><![CDATA[1738595548276]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -10749,12 +10761,12 @@ utilizationRobot_2.update();]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 							<ItemName><![CDATA[1738595548276]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -10801,12 +10813,12 @@ utilizationRobot_2.update();]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+							<PackageName><![CDATA[kanban]]></PackageName>
 							<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 							<ItemName><![CDATA[1738595548276]]></ItemName>
 						</GenericParameterSubstituteReference>
@@ -10976,12 +10988,12 @@ exponential(orderRate, 0,  RNGArrivalRate);]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[Order]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[Order]]></ClassName>
 											<ItemName><![CDATA[1737703293446]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -11010,6 +11022,9 @@ exponential(orderRate, 0,  RNGArrivalRate);]]></Code>
 										</Parameter>
 										<Parameter>
 											<Name><![CDATA[actualPickUpTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[orderLeadTime_min]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -11153,17 +11168,44 @@ agent.arrivalTimeStamp_min = time();]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[Order]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[Order]]></ClassName>
 											<ItemName><![CDATA[1737703293446]]></ItemName>
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
+										<Parameter>
+											<Name><![CDATA[prodType]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[quantity]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[arrivalTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[finishedTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[orderID]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[arrivalTimePickUpTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[waitingTime_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[actualPickUpTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[orderLeadTime_min]]></Name>
+										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -19234,7 +19276,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>310</Width>
-					<Height>50</Height>
+					<Height>75</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1644806</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -19263,7 +19305,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 				<Text>
 					<Id>1738911743472</Id>
 					<Name><![CDATA[text22]]></Name>
-					<X>282</X><Y>735</Y>
+					<X>282</X><Y>760</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -22025,7 +22067,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="230" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -22050,7 +22091,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="230" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -22075,7 +22115,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="230" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -22100,7 +22139,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="230" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -22125,7 +22163,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="230" Height="30">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -22385,7 +22422,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[batchToKanbanBox]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22412,7 +22449,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<ShowLabel>false</ShowLabel>
 					<SourceId>1737549610344</SourceId>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[queueOrders]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22438,7 +22475,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[unbatchItmes]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22448,7 +22485,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[queueItems]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22471,7 +22508,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[queueItems]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22481,7 +22518,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22505,7 +22542,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[newItem]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22515,7 +22552,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[batchToKanbanBox]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22538,7 +22575,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22565,7 +22602,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[initial_inventory]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22575,7 +22612,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[queueItems]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22600,7 +22637,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[queueOrders]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22610,7 +22647,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22634,7 +22671,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<ShowLabel>false</ShowLabel>
 					<SourceId>1737549610348</SourceId>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[dropoff]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22659,7 +22696,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[dropoff]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22669,7 +22706,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[unbatchItmes]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22692,7 +22729,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[destroyedComponets]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -22702,7 +22739,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicItem]]></ClassName>
 						<ItemName><![CDATA[dropoff]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -22805,7 +22842,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -22880,12 +22917,12 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 											<ItemName><![CDATA[1737623308842]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -23128,12 +23165,12 @@ main.currentItemStock++;
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[KanbanBox]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[KanbanBox]]></ClassName>
 											<ItemName><![CDATA[1738591701112]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -23150,6 +23187,18 @@ main.currentItemStock++;
 										</Parameter>
 										<Parameter>
 											<Name><![CDATA[processingTime_Roboter2]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[componentProductionLeadTime_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[productionStartTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[productionEndTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[itemProductionLeadTime_min]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -23745,12 +23794,12 @@ main.customStation_p2;]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 											<ItemName><![CDATA[1737623308842]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -24546,7 +24595,7 @@ if (prodType == 0) {
 					<X>0.867</X><Y>0.633</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[3d/box_1_closed.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -24956,7 +25005,7 @@ if (prodType == 0) {
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[3d/person.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -25218,7 +25267,7 @@ if (prodType == 0) {
 					<X>-10</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[3d/forklift.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -25252,7 +25301,7 @@ if (prodType == 0) {
 					<X>-15</X><Y>0</Y><Z>8</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[3d/sittingworker.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -25652,7 +25701,7 @@ if (prodType == 0) {
 					<X>0</X><Y>0</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[3d/box_opened.dae]]></ClassName>
 					</ResourceReference>
 					<ColorTable>
@@ -25916,7 +25965,7 @@ if (prodType == 0) {
 					<ShowLabel>false</ShowLabel>
 					<SourceId>1738595548544</SourceId>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[unbatchComponents]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -25941,7 +25990,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[batchToKanbanBox]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -25951,7 +26000,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[newComponent]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -25974,7 +26023,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[batchToKanbanBox]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26000,7 +26049,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26026,7 +26075,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[initial_inventory]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26036,7 +26085,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueComponents]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26062,7 +26111,7 @@ if (prodType == 0) {
 					<ShowLabel>false</ShowLabel>
 					<SourceId>1738595548540</SourceId>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueItem]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26088,7 +26137,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueItem]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26098,7 +26147,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26121,7 +26170,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26131,7 +26180,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueItem]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26154,7 +26203,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueComponents]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26164,7 +26213,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[unbatchComponents]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26187,7 +26236,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[queueComponents]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -26197,7 +26246,7 @@ if (prodType == 0) {
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[KanbanLogicComponent]]></ClassName>
 						<ItemName><![CDATA[pickup]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -26278,7 +26327,7 @@ if (prodType == 0) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+						<PackageName><![CDATA[kanban]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 					</ActiveObjectClass>
 				</ContainerLink>
@@ -26353,12 +26402,12 @@ if (prodType == 0) {
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 											<ItemName><![CDATA[1737623308842]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -26600,12 +26649,12 @@ main.currentComponentStock++;]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[KanbanBox]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[KanbanBox]]></ClassName>
 											<ItemName><![CDATA[1738591701112]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -26622,6 +26671,18 @@ main.currentComponentStock++;]]></Code>
 										</Parameter>
 										<Parameter>
 											<Name><![CDATA[processingTime_Roboter2]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[componentProductionLeadTime_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[productionStartTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[productionEndTimeStamp_min]]></Name>
+										</Parameter>
+										<Parameter>
+											<Name><![CDATA[itemProductionLeadTime_min]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -27305,12 +27366,12 @@ main.componentStorage_p2;]]></Code>
 								<IsAgentEntity>true</IsAgentEntity>
 								<EntityEmbeddedObject>
 									<ActiveObjectClass>
-										<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+										<PackageName><![CDATA[kanban]]></PackageName>
 										<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 									</ActiveObjectClass>
 									<GenericParameterSubstitute>
 										<GenericParameterSubstituteReference>
-											<PackageName><![CDATA[kanbanschulmodel]]></PackageName>
+											<PackageName><![CDATA[kanban]]></PackageName>
 											<ClassName><![CDATA[ItemOrComponent]]></ClassName>
 											<ItemName><![CDATA[1737623308842]]></ItemName>
 										</GenericParameterSubstituteReference>
@@ -27426,8 +27487,7 @@ main.componentStorage_p2;]]></Code>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[//Assign Prod Type
-agent.prodType = prodType;
-traceln("-----");]]></Code>
+agent.prodType = prodType;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -27786,34 +27846,34 @@ if(ExpectedProcessingTimeRob1.getValue() == 0){
 	root.processingTime_Rob1_Rob2[0] = 0.5;
 	root.textRateTimeRobot1.setText("Slow");
 	root.textRateTimeRobot1.setColor(green);
-	root.costValues[3] = 3;
+	root.costValues[3] = 10;
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[0] = 0.4;
 	root.textRateTimeRobot1.setText("Medium");
 	root.textRateTimeRobot1.setColor(darkOrange);
-	root.costValues[3] = 5;
+	root.costValues[3] = 13;
 }else{
 	root.processingTime_Rob1_Rob2[0] = 0.3;
 	root.textRateTimeRobot1.setText("Fast");
 	root.textRateTimeRobot1.setColor(darkRed);
-	root.costValues[3] = 7;
+	root.costValues[3] = 16;
 }
 
 if(ExpectedProcessingTimeRob2.getValue() == 0){
 	root.processingTime_Rob1_Rob2[1] = 0.5;
 	root.textRateTimeRobot2.setText("Slow");
 	root.textRateTimeRobot2.setColor(green);
-	root.costValues[4] = 3;	
+	root.costValues[4] = 10;	
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[1] = 0.4;
 	root.textRateTimeRobot2.setText("Medium");
 	root.textRateTimeRobot2.setColor(darkOrange);
-	root.costValues[4] = 5;
+	root.costValues[4] = 13;
 }else{
 	root.processingTime_Rob1_Rob2[1] = 0.3;
 	root.textRateTimeRobot2.setText("Fast");
 	root.textRateTimeRobot2.setColor(darkRed);
-	root.costValues[4] = 7;
+	root.costValues[4] = 16;
 }
 
 // Parameters Component
@@ -28004,7 +28064,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					</BasicProperties>
 					<ExtendedProperties>
 						<Font Name="Dialog" Size="11" Style="0"/>
-						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
 						<Orientation>VERTICAL</Orientation>
 						<Button><![CDATA[Deterministic]]></Button>
 						<Button><![CDATA[Exponential Distribution]]></Button>
@@ -28248,7 +28308,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					</BasicProperties>
 					<ExtendedProperties>
 						<Font Name="Dialog" Size="11" Style="0"/>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[2]]></DefaultValueCode>
 						<Orientation>VERTICAL</Orientation>
 						<Button><![CDATA[Low]]></Button>
 						<Button><![CDATA[Medium]]></Button>
@@ -28275,9 +28335,9 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
 						<Orientation>VERTICAL</Orientation>
-						<Button><![CDATA[Slow [3 cent / min]]]></Button>
-						<Button><![CDATA[Medium  [5 cent / min]]]></Button>
-						<Button><![CDATA[Fast  [7 cent / min]]]></Button>
+						<Button><![CDATA[Slow [10 cent / min]]]></Button>
+						<Button><![CDATA[Medium  [13 cent / min]]]></Button>
+						<Button><![CDATA[Fast  [16 cent / min]]]></Button>
 						<LinkTo>false</LinkTo>
 					</ExtendedProperties>
 				</Control>
@@ -28300,9 +28360,9 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
 						<Orientation>VERTICAL</Orientation>
-						<Button><![CDATA[Slow  [3 cent / min]]]></Button>
-						<Button><![CDATA[Medium  [5 cent / min]]]></Button>
-						<Button><![CDATA[Fast  [7 cent / min]]]></Button>
+						<Button><![CDATA[Slow  [10 cent / min]]]></Button>
+						<Button><![CDATA[Medium  [13 cent / min]]]></Button>
+						<Button><![CDATA[Fast  [16 cent / min]]]></Button>
 						<LinkTo>false</LinkTo>
 					</ExtendedProperties>
 				</Control>
@@ -28492,7 +28552,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -28537,7 +28597,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -28582,7 +28642,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29061,7 +29121,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[2]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29106,7 +29166,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[2]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29151,7 +29211,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[4]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[2]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29196,7 +29256,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[6]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29241,7 +29301,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[6]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29286,7 +29346,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 						<ActionCode><![CDATA[checkParametrization();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
-						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<DefaultValueCode><![CDATA[6]]></DefaultValueCode>
 						<Orientation>HORIZONTAL</Orientation>
 						<MinValue><![CDATA[1]]></MinValue>
 						<MaxValue><![CDATA[10]]></MaxValue>
@@ -29723,7 +29783,6 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<BasicProperties Width="40" Height="25">
                         <EmbeddedIcon>false</EmbeddedIcon>	
@@ -29885,7 +29944,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Time Dependent {3 ; 5 ; 7} ]]></Text>
+					<Text><![CDATA[Time Dependent {10 ; 13 ; 16} ]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
