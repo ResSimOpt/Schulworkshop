@@ -127,7 +127,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738605804492</Id>
 					<Name><![CDATA[RNGProdType]]></Name>
 					<Description><![CDATA[#used for randomness in Producttype]]></Description>
-					<X>755</X><Y>2165</Y>
+					<X>750</X><Y>2162</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -143,7 +143,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738605804494</Id>
 					<Name><![CDATA[RNGQuantity]]></Name>
 					<Description><![CDATA[#used for randomness in Producttype]]></Description>
-					<X>755</X><Y>2185</Y>
+					<X>750</X><Y>2180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -158,7 +158,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738605804496</Id>
 					<Name><![CDATA[orderIDIterator]]></Name>
-					<X>1090</X><Y>2100</Y>
+					<X>1090</X><Y>2095</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -174,7 +174,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738772141370</Id>
 					<Name><![CDATA[RNGArrivalRate]]></Name>
 					<Description><![CDATA[#used for randomness in Producttype]]></Description>
-					<X>755</X><Y>2205</Y>
+					<X>750</X><Y>2144</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -182,7 +182,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[Random]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[new Random(3)]]></Code>
+							<Code><![CDATA[new Random(0)]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -190,7 +190,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738772154375</Id>
 					<Name><![CDATA[RNGProcessingTime_Rob1]]></Name>
 					<Description><![CDATA[#used for randomness in Producttype]]></Description>
-					<X>755</X><Y>2225</Y>
+					<X>750</X><Y>2215</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -206,7 +206,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738772292472</Id>
 					<Name><![CDATA[RNGProcessingTime_Rob2]]></Name>
 					<Description><![CDATA[#used for randomness in Producttype]]></Description>
-					<X>755</X><Y>2245</Y>
+					<X>750</X><Y>2250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -214,7 +214,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[Random]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[new Random(5)]]></Code>
+							<Code><![CDATA[new Random(6)]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -233,7 +233,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738910261248</Id>
 					<Name><![CDATA[deliveredParts]]></Name>
-					<X>290</X><Y>945</Y>
+					<X>290</X><Y>935</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -245,7 +245,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911261099</Id>
 					<Name><![CDATA[componentStockCosts]]></Name>
-					<X>290</X><Y>790</Y>
+					<X>290</X><Y>785</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -257,7 +257,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911364986</Id>
 					<Name><![CDATA[itemStockCosts]]></Name>
-					<X>290</X><Y>815</Y>
+					<X>290</X><Y>805</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -269,7 +269,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738911374518</Id>
 					<Name><![CDATA[tardinessCosts]]></Name>
-					<X>290</X><Y>840</Y>
+					<X>290</X><Y>825</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -280,8 +280,8 @@ utilizationRobot_2.update();]]></StartupCode>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1738911425493</Id>
-					<Name><![CDATA[machineOperationCosts]]></Name>
-					<X>290</X><Y>865</Y>
+					<Name><![CDATA[machineSetUpCosts]]></Name>
+					<X>290</X><Y>845</Y>
 					<Label><X>11</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -305,7 +305,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738961486467</Id>
 					<Name><![CDATA[currentComponentStock]]></Name>
-					<X>290</X><Y>1133</Y>
+					<X>290</X><Y>1103</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -317,7 +317,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1738961525011</Id>
 					<Name><![CDATA[currentItemStock]]></Name>
-					<X>290</X><Y>1183</Y>
+					<X>290</X><Y>1151</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -329,7 +329,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="PlainVariable">
 					<Id>1739140106313</Id>
 					<Name><![CDATA[simTime_min]]></Name>
-					<X>1090</X><Y>2120</Y>
+					<X>1090</X><Y>2115</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -350,11 +350,79 @@ utilizationRobot_2.update();]]></StartupCode>
 						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1740564865142</Id>
+					<Name><![CDATA[RNGSetUpTime_Rob2]]></Name>
+					<Description><![CDATA[#used for randomness in Producttype]]></Description>
+					<X>750</X><Y>2233</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Random]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new Random(5)]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1740564890329</Id>
+					<Name><![CDATA[RNGSetUpTime_Rob1]]></Name>
+					<Description><![CDATA[#used for randomness in Producttype]]></Description>
+					<X>749</X><Y>2197</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Random]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new Random(3)]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1740571642597</Id>
+					<Name><![CDATA[numberOfSetUpsRobot_1]]></Name>
+					<X>290</X><Y>1197</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1740571725476</Id>
+					<Name><![CDATA[numberOfSetUpsRobot_2]]></Name>
+					<X>290</X><Y>1242</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1740571799445</Id>
+					<Name><![CDATA[machineProcessingCosts]]></Name>
+					<X>290</X><Y>865</Y>
+					<Label><X>12</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1737550138945</Id>
 					<Name><![CDATA[numberOfKanbans_Item]]></Name>
 					<Description><![CDATA[0 = Deterministic / 1 = Exponential]]></Description>
-					<X>930</X><Y>2120</Y>
+					<X>930</X><Y>2111</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -378,7 +446,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1737550138948</Id>
 					<Name><![CDATA[kanbanLotsize_Item]]></Name>
-					<X>930</X><Y>2140</Y>
+					<X>930</X><Y>2130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -402,7 +470,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1737550138951</Id>
 					<Name><![CDATA[processingTime_Rob1_Rob2]]></Name>
-					<X>930</X><Y>2220</Y>
+					<X>930</X><Y>2204</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -426,7 +494,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1737715082704</Id>
 					<Name><![CDATA[numberOfForklifts]]></Name>
-					<X>930</X><Y>2100</Y>
+					<X>930</X><Y>2091</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -450,7 +518,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1738605804499</Id>
 					<Name><![CDATA[orderRate]]></Name>
-					<X>755</X><Y>2125</Y>
+					<X>748</X><Y>2110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -474,7 +542,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1738606055055</Id>
 					<Name><![CDATA[numberOfKanbans_Component]]></Name>
-					<X>930</X><Y>2160</Y>
+					<X>930</X><Y>2150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -498,7 +566,7 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1738606055066</Id>
 					<Name><![CDATA[kanbanLotsize_Component]]></Name>
-					<X>930</X><Y>2180</Y>
+					<X>930</X><Y>2168</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -523,7 +591,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738755953104</Id>
 					<Name><![CDATA[uncertaintyOrder]]></Name>
 					<Description><![CDATA[0 = Deterministic / 1 = Exponential]]></Description>
-					<X>755</X><Y>2107</Y>
+					<X>748</X><Y>2092</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -548,7 +616,7 @@ utilizationRobot_2.update();]]></StartupCode>
 					<Id>1738764986773</Id>
 					<Name><![CDATA[uncertaintyProcessing_Rob1_Rob2]]></Name>
 					<Description><![CDATA[0 = Deterministic / 1 = Exponential]]></Description>
-					<X>930</X><Y>2200</Y>
+					<X>930</X><Y>2186</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -571,9 +639,9 @@ utilizationRobot_2.update();]]></StartupCode>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1738768409662</Id>
-					<Name><![CDATA[setUpTime]]></Name>
+					<Name><![CDATA[setUpTime_Rob1_Rob2]]></Name>
 					<Description><![CDATA[Value =]]></Description>
-					<X>930</X><Y>2240</Y>
+					<X>930</X><Y>2236</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -583,7 +651,7 @@ utilizationRobot_2.update();]]></StartupCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[{0.1, 0.1}]]></Code>
+							<Code><![CDATA[{0.0, 0.0}]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1738768409660</Id>
@@ -597,8 +665,14 @@ utilizationRobot_2.update();]]></StartupCode>
 				<Variable Class="Parameter">
 					<Id>1739145989562</Id>
 					<Name><![CDATA[costValues]]></Name>
-					<Description><![CDATA[Value =]]></Description>
-					<X>1090</X><Y>2240</Y>
+					<Description><![CDATA[0 = WIP,
+1 = FIG
+2 = Tardiness, 
+3 =SetUpRobot1
+4 =SetUpRobot2
+5 =ProcessingRobot1
+6 =ProcessingRobot2]]></Description>
+					<X>930</X><Y>2250</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -608,10 +682,35 @@ utilizationRobot_2.update();]]></StartupCode>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[{0, 0 , 0, 0, 3, 3}]]></Code>
+							<Code><![CDATA[new double[7]]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1739145989560</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1740563890402</Id>
+					<Name><![CDATA[uncertaintySetUp_Rob1_Rob2]]></Name>
+					<Description><![CDATA[0 = Deterministic / 1 = Exponential]]></Description>
+					<X>930</X><Y>2220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int[]]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[{0, 0}]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1740563890400</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -1210,39 +1309,6 @@ utilizationRobot_2.update();]]></StartupCode>
 					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
 						<ClassName><![CDATA[Convey]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1737708805862</Id>
-					<Name><![CDATA[connector38]]></Name>
-					<X>480</X><Y>2340</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[kanban]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[conveyComponent]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
-						<ClassName><![CDATA[Convey]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[kanban]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[processComponentByRobot1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
-						<ClassName><![CDATA[ProcessByRobot]]></ClassName>
 						<ItemName><![CDATA[in]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
@@ -2944,12 +3010,45 @@ utilizationRobot_2.update();]]></StartupCode>
 						<Point><X>55</X><Y>-45</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1737708805862</Id>
+					<Name><![CDATA[connector38]]></Name>
+					<X>480</X><Y>2340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[kanban]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[conveyComponent]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+						<ClassName><![CDATA[Convey]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[kanban]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[processComponentByRobot1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+						<ClassName><![CDATA[ProcessByRobot]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>20</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
 			<Events>
 				<Event>
 					<Id>1739132253013</Id>
 					<Name><![CDATA[endSim]]></Name>
-					<X>1090</X><Y>2143</Y>
+					<X>1115</X><Y>2210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2989,13 +3088,15 @@ while (iterator.hasNext()) {
 componentStockCosts = roundToDecimal(componentStock.mean() * simTime_min * costValues[0], 2);
 itemStockCosts = roundToDecimal(itemStock.mean() * simTime_min * costValues[1], 2);
 tardinessCosts = roundToDecimal(tardiness.mean() * simTime_min * costValues[2], 2);
-machineOperationCosts = roundToDecimal(simTime_min * costValues[3] * utilizationRobot_1.mean(), 2) + roundToDecimal(simTime_min * costValues[4] * utilizationRobot_2.mean(), 2); //Robot 1 and Robot 2
+machineSetUpCosts = numberOfSetUpsRobot_1 * costValues[3] + numberOfSetUpsRobot_2 * costValues[4]; //Robot 1 and Robot 2
+machineProcessingCosts = roundToDecimal(simTime_min * costValues[5] * utilizationRobot_1.mean(), 2) + roundToDecimal(simTime_min * costValues[6] * utilizationRobot_2.mean(), 2); //Robot 1 and Robot 2
 
 totalCosts = roundToDecimal(
     componentStockCosts +
     itemStockCosts +
    	tardinessCosts +
-    machineOperationCosts, 2
+   	machineSetUpCosts +
+    machineProcessingCosts, 2
 );
 
 totalCostsPerPeriod = roundToDecimal(totalCosts / simTime_min, 2);
@@ -3010,7 +3111,7 @@ finishSimulation();]]></Action>
 					<ReturnType><![CDATA[int]]></ReturnType>
 					<Id>1738605804490</Id>
 					<Name><![CDATA[productTypeGenerator]]></Name>
-					<X>755</X><Y>2145</Y>
+					<X>750</X><Y>2126</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3021,10 +3122,10 @@ int producType = -1;
 
 if (rand < 0.35) {
 	producType = 0; // 35% probability
-} else if (rand < (0.35 + 0.25)) {
-   producType = 1; // 25% probability
+} else if (rand < (0.35 + 0.15)) {
+   producType = 1; // 15% probability
 } else {
-	producType = 2; // 40% probability
+	producType = 2; // 50% probability
 }
 
 return producType;
@@ -3035,7 +3136,7 @@ return producType;
     			<Statistics>
 					<Id>1738606519414</Id>
 					<Name><![CDATA[serviceLevel]]></Name>
-					<X>290</X><Y>975</Y>
+					<X>290</X><Y>958</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3056,7 +3157,7 @@ return producType;
     			<HistogramData>
 					<Id>1738846418034</Id>
 					<Name><![CDATA[tardiness]]></Name>
-					<X>290</X><Y>1005</Y>
+					<X>290</X><Y>980</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3087,8 +3188,8 @@ return producType;
     			<Statistics>
 					<Id>1738910316846</Id>
 					<Name><![CDATA[componentStock]]></Name>
-					<X>290</X><Y>1158</Y>
-					<Label><X>15</X><Y>0</Y></Label>
+					<X>290</X><Y>1128</Y>
+					<Label><X>12</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3109,7 +3210,7 @@ return producType;
     			<Statistics>
 					<Id>1738911029111</Id>
 					<Name><![CDATA[itemStock]]></Name>
-					<X>290</X><Y>1209</Y>
+					<X>290</X><Y>1175</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3131,7 +3232,7 @@ return producType;
     			<HistogramData>
 					<Id>1738911222449</Id>
 					<Name><![CDATA[orderLeadTime]]></Name>
-					<X>290</X><Y>1065</Y>
+					<X>290</X><Y>1030</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3162,8 +3263,8 @@ return producType;
     			<Statistics>
 					<Id>1738911287483</Id>
 					<Name><![CDATA[utilizationRobot_1]]></Name>
-					<X>290</X><Y>1234</Y>
-					<Label><X>15</X><Y>0</Y></Label>
+					<X>290</X><Y>1220</Y>
+					<Label><X>14</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3183,8 +3284,8 @@ return producType;
     			<Statistics>
 					<Id>1738911305278</Id>
 					<Name><![CDATA[utilizationRobot_2]]></Name>
-					<X>290</X><Y>1257</Y>
-					<Label><X>15</X><Y>0</Y></Label>
+					<X>290</X><Y>1265</Y>
+					<Label><X>14</X><Y>1</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -3204,7 +3305,7 @@ return producType;
     			<HistogramData>
 					<Id>1738959096553</Id>
 					<Name><![CDATA[componentProductionLeadTime]]></Name>
-					<X>290</X><Y>1088</Y>
+					<X>290</X><Y>1055</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3235,7 +3336,7 @@ return producType;
     			<HistogramData>
 					<Id>1738959139112</Id>
 					<Name><![CDATA[itemProductionLeadTime]]></Name>
-					<X>290</X><Y>1110</Y>
+					<X>290</X><Y>1081</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -7204,7 +7305,7 @@ return producType;
 						<Parameter>
 							<Name><![CDATA[operationTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[agent.processingTime_Roboter1]]></Code>
+								<Code><![CDATA[agent.operationsTime_Roboter1]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -7346,14 +7447,28 @@ return producType;
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[// Calculate Processing Time
+								<Code><![CDATA[// Calculate Set Up Time
+numberOfSetUpsRobot_1++;
+
+if (uncertaintySetUp_Rob1_Rob2[0] == 0) {
+    agent.setUpTime_Roboter1 = setUpTime_Rob1_Rob2[0];
+} else {
+    agent.setUpTime_Roboter1 = exponential( 1 /
+        setUpTime_Rob1_Rob2[0], 0, RNGSetUpTime_Rob1
+    );
+}
+
+// Calculate Processing Time
 if (uncertaintyProcessing_Rob1_Rob2[0] == 0) {
-    agent.processingTime_Roboter1 = (processingTime_Rob1_Rob2[0] * agent.kanbanLotsize) + setUpTime[0];
+    agent.processingTime_Roboter1 = (processingTime_Rob1_Rob2[0] * agent.kanbanLotsize);
 } else {
     agent.processingTime_Roboter1 = exponential( 1 /
         (processingTime_Rob1_Rob2[0] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob1
-    ) + setUpTime[0];
-}]]></Code>
+    );
+}
+
+//Operations Time
+agent.operationsTime_Roboter1 = agent.setUpTime_Roboter1 + agent.processingTime_Roboter1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -9179,7 +9294,7 @@ utilizationRobot_1.update();]]></Code>
 						<Parameter>
 							<Name><![CDATA[operationTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[agent.processingTime_Roboter2]]></Code>
+								<Code><![CDATA[agent.operationsTime_Roboter2]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 							</Value>
 						</Parameter>
@@ -9321,14 +9436,28 @@ utilizationRobot_1.update();]]></Code>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[// Calculate Processing Time
+								<Code><![CDATA[// Calculate Set Up Time
+numberOfSetUpsRobot_2++;
+
+if (uncertaintySetUp_Rob1_Rob2[1] == 0) {
+    agent.setUpTime_Roboter2 = setUpTime_Rob1_Rob2[1];
+} else {
+    agent.setUpTime_Roboter2 = exponential( 1 /
+        setUpTime_Rob1_Rob2[1], 0, RNGSetUpTime_Rob2
+    );
+}
+
+// Calculate Processing Time
 if (uncertaintyProcessing_Rob1_Rob2[1] == 0) {
-    agent.processingTime_Roboter2 = (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize) + setUpTime[1];
+    agent.processingTime_Roboter2 = (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize);
 } else {
     agent.processingTime_Roboter2 = exponential( 1 /
         (processingTime_Rob1_Rob2[1] * agent.kanbanLotsize), 0, RNGProcessingTime_Rob2
-    ) + setUpTime[1];
-}]]></Code>
+    );
+}
+
+//Operations Time
+agent.operationsTime_Roboter2 = agent.setUpTime_Roboter2 + agent.processingTime_Roboter2;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -16718,27 +16847,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<BlockedZoneStartAngle>135.0</BlockedZoneStartAngle>
 					<BlockedZoneAngle>90.0</BlockedZoneAngle>
 				</Robot>
-				<Text>
-					<Id>1737716619100</Id>
-					<Name><![CDATA[text8]]></Name>
-					<X>750</X><Y>2273</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Production Item]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>12</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
 				<Rectangle>
 					<Id>1738749718381</Id>
 					<Name><![CDATA[backgroundOrder]]></Name>
@@ -17225,7 +17333,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
@@ -18173,27 +18280,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
 				</Rectangle>
-				<Text>
-					<Id>1738752806135</Id>
-					<Name><![CDATA[text15]]></Name>
-					<X>765</X><Y>2083</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Parameters]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>12</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
 				<Text>
 					<Id>1738753012538</Id>
 					<Name><![CDATA[text6]]></Name>
@@ -19326,7 +19412,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 				<Rectangle>
 					<Id>1738911879366</Id>
 					<Name><![CDATA[backgroundInternalKPIs]]></Name>
-					<X>270</X><Y>1030</Y>
+					<X>270</X><Y>995</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -19341,7 +19427,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>310</Width>
-					<Height>250</Height>
+					<Height>285</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -19349,7 +19435,7 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 				<Text>
 					<Id>1738910316837</Id>
 					<Name><![CDATA[text18]]></Name>
-					<X>285</X><Y>1035</Y>
+					<X>285</X><Y>1000</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -20778,812 +20864,16 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 				<Group>
 					<Id>1739044032281</Id>
 					<Name><![CDATA[group5]]></Name>
-					<X>135</X><Y>1200</Y>
+					<X>140</X><Y>1200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 
-			<Presentation>
-				<Rectangle>
-					<Id>1739043481529</Id>
-					<Name><![CDATA[rectangle6]]></Name>
-					<X>-135</X><Y>-80</Y>
-					<Label><X>10</X><Y>10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<Width>270</Width>
-					<Height>160</Height>
-					<Rotation>0.0</Rotation>
-					<FillColor>-1</FillColor>
-					<FillMaterial>null</FillMaterial>
-				</Rectangle>
-				<Line>
-					<Id>1739042847626</Id>
-					<Name><![CDATA[line2]]></Name>
-					<X>-135</X><Y>10</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>270</Dx>
-					<Dy>0</Dy>
-					<Dz>0</Dz>
-				</Line>
-				<Line>
-					<Id>1739042867173</Id>
-					<Name><![CDATA[line3]]></Name>
-					<X>-60</X><Y>-80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>0</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>0</Dx>
-					<Dy>160</Dy>
-					<Dz>0</Dz>
-				</Line>
-				<Text>
-					<Id>1739042881847</Id>
-					<Name><![CDATA[text26]]></Name>
-					<X>-130</X><Y>-55</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Order]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042919749</Id>
-					<Name><![CDATA[text27]]></Name>
-					<X>-37</X><Y>-77</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Uncertainty]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042936886</Id>
-					<Name><![CDATA[text28]]></Name>
-					<X>62</X><Y>-77</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Rate/Time]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043047468</Id>
-					<Name><![CDATA[text29]]></Name>
-					<X>-130</X><Y>-35</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Robot 1]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043165342</Id>
-					<Name><![CDATA[text30]]></Name>
-					<X>-130</X><Y>-15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Robot 2]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043185279</Id>
-					<Name><![CDATA[textOrderUncertainty]]></Name>
-					<X>-10</X><Y>-55</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043249784</Id>
-					<Name><![CDATA[textUncertaintyRobot1]]></Name>
-					<X>-10</X><Y>-35</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043265592</Id>
-					<Name><![CDATA[textUncertaintyRobot2]]></Name>
-					<X>-10</X><Y>-15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043313365</Id>
-					<Name><![CDATA[textOrderRateTime]]></Name>
-					<X>86</X><Y>-55</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043313367</Id>
-					<Name><![CDATA[textRateTimeRobot1]]></Name>
-					<X>86</X><Y>-35</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043313369</Id>
-					<Name><![CDATA[textRateTimeRobot2]]></Name>
-					<X>86</X><Y>-15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Line>
-					<Id>1739043544806</Id>
-					<Name><![CDATA[line4]]></Name>
-					<X>-135</X><Y>-60</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>270</Dx>
-					<Dy>0</Dy>
-					<Dz>0</Dz>
-				</Line>
-				<Text>
-					<Id>1739042415834</Id>
-					<Name><![CDATA[text]]></Name>
-					<X>-47</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[C0]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042511005</Id>
-					<Name><![CDATA[text1]]></Name>
-					<X>85</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[I1]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042512392</Id>
-					<Name><![CDATA[text4]]></Name>
-					<X>-17</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[C1]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042515276</Id>
-					<Name><![CDATA[text19]]></Name>
-					<X>15</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[C2]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042517487</Id>
-					<Name><![CDATA[text20]]></Name>
-					<X>53</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[I0]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042547193</Id>
-					<Name><![CDATA[text23]]></Name>
-					<X>114</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[I2]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042579680</Id>
-					<Name><![CDATA[text24]]></Name>
-					<X>-130</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Nr. Kanbans]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1739042601299</Id>
-					<Name><![CDATA[text25]]></Name>
-					<X>-130</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Lot Size]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>1</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Line>
-					<Id>1739042745405</Id>
-					<Name><![CDATA[line]]></Name>
-					<X>-135</X><Y>35</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>270</Dx>
-					<Dy>0</Dy>
-					<Dz>0</Dz>
-				</Line>
-				<Line>
-					<Id>1739042780616</Id>
-					<Name><![CDATA[line1]]></Name>
-					<X>38</X><Y>-80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<ZHeight>10</ZHeight>
-					<LineWidth>1</LineWidth>
-					<LineColor>-16777216</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<LineStyle>SOLID</LineStyle>
-					<BeginArrowSize>1</BeginArrowSize>
-					<BeginArrowStyle>0</BeginArrowStyle>
-					<EndArrowSize>1</EndArrowSize>
-					<EndArrowStyle>0</EndArrowStyle>
-					<Dx>0</Dx>
-					<Dy>160</Dy>
-					<Dz>0</Dz>
-				</Line>
-				<Text>
-					<Id>1739043628320</Id>
-					<Name><![CDATA[textNrKanbansC0]]></Name>
-					<X>-41</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043791785</Id>
-					<Name><![CDATA[textNrKanbansC1]]></Name>
-					<X>-11</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043795413</Id>
-					<Name><![CDATA[textNrKanbansC2]]></Name>
-					<X>22</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043850444</Id>
-					<Name><![CDATA[textNrKanbansI0]]></Name>
-					<X>56</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043865501</Id>
-					<Name><![CDATA[textNrKanbansI1]]></Name>
-					<X>88</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043889914</Id>
-					<Name><![CDATA[textNrKanbansI2]]></Name>
-					<X>118</X><Y>40</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936496</Id>
-					<Name><![CDATA[textLotSizeC0]]></Name>
-					<X>-41</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936498</Id>
-					<Name><![CDATA[textLotSizeC1]]></Name>
-					<X>-11</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936500</Id>
-					<Name><![CDATA[textLotSizeC2]]></Name>
-					<X>22</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936502</Id>
-					<Name><![CDATA[textLotSizeI0]]></Name>
-					<X>56</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936504</Id>
-					<Name><![CDATA[textLotSizeI1]]></Name>
-					<X>88</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-				<Text>
-					<Id>1739043936506</Id>
-					<Name><![CDATA[textLotSizeI2]]></Name>
-					<X>118</X><Y>60</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[x]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>11</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>CENTER</Alignment>
-				</Text>
-			</Presentation>
 
 				</Group>
     			<TimePlot>
@@ -22084,30 +21374,6 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 				</Control>
 				<Control Type="ProgressBar">
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1739175853400</Id>
-					<Name><![CDATA[progressBar2]]></Name>
-					<X>20</X><Y>1080</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="230" Height="30">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Orientation>HORIZONTAL</Orientation>
-						<ShowProgressString>true</ShowProgressString>
-						<ProgressStringCode><![CDATA[percent + " percent(s) completed"]]></ProgressStringCode>
-						<ValueCode><![CDATA[time()]]></ValueCode>
-						<MinValue><![CDATA[0]]></MinValue>
-						<MaxValue><![CDATA[simTime_min]]></MaxValue>
-						<Determinate><![CDATA[true]]></Determinate>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="ProgressBar">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1739175871084</Id>
 					<Name><![CDATA[progressBar3]]></Name>
 					<X>20</X><Y>1820</Y>
@@ -22178,6 +21444,925 @@ orderLeadTime.add(agent.orderLeadTime_min);]]></Code>
 						<Determinate><![CDATA[true]]></Determinate>
 					</ExtendedProperties>
 				</Control>
+				<Rectangle>
+					<Id>1739043481529</Id>
+					<Name><![CDATA[rectangle6]]></Name>
+					<X>0</X><Y>1075</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>270</Width>
+					<Height>205</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Line>
+					<Id>1739042847626</Id>
+					<Name><![CDATA[line2]]></Name>
+					<X>0</X><Y>1210</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>270</Dx>
+					<Dy>0</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Line>
+					<Id>1739042867173</Id>
+					<Name><![CDATA[line3]]></Name>
+					<X>85</X><Y>1075</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>0</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>0</Dx>
+					<Dy>205</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1739042881847</Id>
+					<Name><![CDATA[text26]]></Name>
+					<X>5</X><Y>1102</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Order]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042919749</Id>
+					<Name><![CDATA[text27]]></Name>
+					<X>103</X><Y>1080</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Uncertainty]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042936886</Id>
+					<Name><![CDATA[text28]]></Name>
+					<X>197</X><Y>1080</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Rate/Time]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043047468</Id>
+					<Name><![CDATA[text29]]></Name>
+					<X>5</X><Y>1124</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Rob. 1 SetUp ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043165342</Id>
+					<Name><![CDATA[text30]]></Name>
+					<X>5</X><Y>1145</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Rob. 1 Proc]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043185279</Id>
+					<Name><![CDATA[textOrderUncertainty]]></Name>
+					<X>130</X><Y>1102</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043249784</Id>
+					<Name><![CDATA[textUncertaintySetUpRobot1]]></Name>
+					<X>130</X><Y>1124</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043265592</Id>
+					<Name><![CDATA[textUncertaintyProcessingRobot1]]></Name>
+					<X>130</X><Y>1145</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043313365</Id>
+					<Name><![CDATA[textOrderRateTime]]></Name>
+					<X>221</X><Y>1102</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043313367</Id>
+					<Name><![CDATA[textRateTimeSetUpRobot1]]></Name>
+					<X>221</X><Y>1124</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043313369</Id>
+					<Name><![CDATA[textRateTimeSetUpRobot2]]></Name>
+					<X>221</X><Y>1167</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Line>
+					<Id>1739043544806</Id>
+					<Name><![CDATA[line4]]></Name>
+					<X>0</X><Y>1098</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>270</Dx>
+					<Dy>0</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1739042415834</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>93</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042511005</Id>
+					<Name><![CDATA[text1]]></Name>
+					<X>220</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[I1]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042512392</Id>
+					<Name><![CDATA[text4]]></Name>
+					<X>123</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C1]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042515276</Id>
+					<Name><![CDATA[text19]]></Name>
+					<X>155</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042517487</Id>
+					<Name><![CDATA[text20]]></Name>
+					<X>188</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[I0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042547193</Id>
+					<Name><![CDATA[text23]]></Name>
+					<X>249</X><Y>1215</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[I2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042579680</Id>
+					<Name><![CDATA[text24]]></Name>
+					<X>5</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Nr. Kanbans]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1739042601299</Id>
+					<Name><![CDATA[text25]]></Name>
+					<X>5</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Lot Size]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Line>
+					<Id>1739042745405</Id>
+					<Name><![CDATA[line]]></Name>
+					<X>0</X><Y>1235</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>270</Dx>
+					<Dy>0</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Line>
+					<Id>1739042780616</Id>
+					<Name><![CDATA[line1]]></Name>
+					<X>180</X><Y>1074</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>-1</Dx>
+					<Dy>206</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1739043628320</Id>
+					<Name><![CDATA[textNrKanbansC0]]></Name>
+					<X>99</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043791785</Id>
+					<Name><![CDATA[textNrKanbansC1]]></Name>
+					<X>129</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043795413</Id>
+					<Name><![CDATA[textNrKanbansC2]]></Name>
+					<X>162</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043850444</Id>
+					<Name><![CDATA[textNrKanbansI0]]></Name>
+					<X>191</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043865501</Id>
+					<Name><![CDATA[textNrKanbansI1]]></Name>
+					<X>223</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043889914</Id>
+					<Name><![CDATA[textNrKanbansI2]]></Name>
+					<X>253</X><Y>1240</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936496</Id>
+					<Name><![CDATA[textLotSizeC0]]></Name>
+					<X>99</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936498</Id>
+					<Name><![CDATA[textLotSizeC1]]></Name>
+					<X>129</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936500</Id>
+					<Name><![CDATA[textLotSizeC2]]></Name>
+					<X>162</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936502</Id>
+					<Name><![CDATA[textLotSizeI0]]></Name>
+					<X>191</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936504</Id>
+					<Name><![CDATA[textLotSizeI1]]></Name>
+					<X>223</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1739043936506</Id>
+					<Name><![CDATA[textLotSizeI2]]></Name>
+					<X>253</X><Y>1260</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572542351</Id>
+					<Name><![CDATA[text31]]></Name>
+					<X>5</X><Y>1167</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Rob. 2 SetUp ]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572542353</Id>
+					<Name><![CDATA[text32]]></Name>
+					<X>5</X><Y>1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Rob. 2 Proc]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572608642</Id>
+					<Name><![CDATA[textUncertaintyProcessingRobot2]]></Name>
+					<X>130</X><Y>1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572614692</Id>
+					<Name><![CDATA[textUncertaintySetUpRobot2]]></Name>
+					<X>130</X><Y>1167</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572689421</Id>
+					<Name><![CDATA[textRateTimeProcessingRobot1]]></Name>
+					<X>221</X><Y>1145</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740572713551</Id>
+					<Name><![CDATA[textRateTimeProcessingRobot2]]></Name>
+					<X>221</X><Y>1190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[x]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>11</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
 			</Presentation>
 
 				</Level>
@@ -25510,7 +25695,7 @@ if (prodType == 0) {
 				<Variable Class="Parameter">
 					<Id>1738773551261</Id>
 					<Name><![CDATA[processingTime_Roboter1]]></Name>
-					<X>30</X><Y>180</Y>
+					<X>30</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25534,7 +25719,7 @@ if (prodType == 0) {
 				<Variable Class="Parameter">
 					<Id>1738773578966</Id>
 					<Name><![CDATA[processingTime_Roboter2]]></Name>
-					<X>30</X><Y>200</Y>
+					<X>30</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25558,7 +25743,7 @@ if (prodType == 0) {
 				<Variable Class="Parameter">
 					<Id>1738959962793</Id>
 					<Name><![CDATA[componentProductionLeadTime_min]]></Name>
-					<X>30</X><Y>220</Y>
+					<X>30</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25630,7 +25815,7 @@ if (prodType == 0) {
 				<Variable Class="Parameter">
 					<Id>1738960872729</Id>
 					<Name><![CDATA[itemProductionLeadTime_min]]></Name>
-					<X>30</X><Y>240</Y>
+					<X>30</X><Y>370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25644,6 +25829,102 @@ if (prodType == 0) {
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1738960872727</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1740570535580</Id>
+					<Name><![CDATA[setUpTime_Roboter1]]></Name>
+					<X>30</X><Y>180</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1740570535578</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1740570549503</Id>
+					<Name><![CDATA[operationsTime_Roboter1]]></Name>
+					<X>30</X><Y>220</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1740570549501</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1740570564855</Id>
+					<Name><![CDATA[setUpTime_Roboter2]]></Name>
+					<X>30</X><Y>250</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1740570564853</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1740570573584</Id>
+					<Name><![CDATA[operationsTime_Roboter2]]></Name>
+					<X>30</X><Y>290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1740570573582</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -25775,6 +26056,27 @@ if (prodType == 0) {
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
 					<Text><![CDATA[Time Stamps]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570515019</Id>
+					<Name><![CDATA[text9]]></Name>
+					<X>20</X><Y>320</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Lead Times]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -27805,7 +28107,8 @@ Comp.]]></Text>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<BeforeSimulationRunCode><![CDATA[//Visualization
-//Uncertainty
+//------------------Uncertainty
+//Order
 if(UncertaintyChangeOrder.getValue() == 0){
 	root.uncertaintyOrder = 0;
 	root.textOrderUncertainty.setText("Deterministic");
@@ -27813,24 +28116,42 @@ if(UncertaintyChangeOrder.getValue() == 0){
 	root.uncertaintyOrder = 1;
 	root.textOrderUncertainty.setText("Exponential");
 }
+//Set UP
+if(UncertaintyChangSetUpRob1.getValue() == 0){
+	root.uncertaintySetUp_Rob1_Rob2[0] = 0;
+	root.textUncertaintySetUpRobot1.setText("Deterministic");
+}else{
+	root.uncertaintySetUp_Rob1_Rob2[0] = 1;
+	root.textUncertaintySetUpRobot1.setText("Exponential");
+}
 
-if(UncertaintyChangeRobotProcessing1.getValue() == 0){
+if(UncertaintyChangSetUpRob2.getValue() == 0){
+	root.uncertaintySetUp_Rob1_Rob2[1] = 0;
+	root.textUncertaintySetUpRobot2.setText("Deterministic");
+}else{
+	root.uncertaintySetUp_Rob1_Rob2[1] = 1;
+	root.textUncertaintySetUpRobot2.setText("Exponential");
+}
+
+//Processing
+if(UncertaintyChangeProcessingRob1.getValue() == 0){
 	root.uncertaintyProcessing_Rob1_Rob2[0] = 0;
-	root.textUncertaintyRobot1.setText("Deterministic");
+	root.textUncertaintyProcessingRobot1.setText("Deterministic");
 }else{
 	root.uncertaintyProcessing_Rob1_Rob2[0] = 1;
-	root.textUncertaintyRobot1.setText("Exponential");
+	root.textUncertaintyProcessingRobot1.setText("Exponential");
 }
 
-if(UncertaintyChangeRobotProcessing2.getValue() == 0){
+if(UncertaintyChangeProcessingRob2.getValue() == 0){
 	root.uncertaintyProcessing_Rob1_Rob2[1] = 0;
-	root.textUncertaintyRobot2.setText("Deterministic");
+	root.textUncertaintyProcessingRobot2.setText("Deterministic");
 }else{
 	root.uncertaintyProcessing_Rob1_Rob2[1] = 1;
-	root.textUncertaintyRobot2.setText("Exponential");
+	root.textUncertaintyProcessingRobot2.setText("Exponential");
 }
 
-//Rate and Times
+//-----------------Rate and Times
+//Order
 if(ExpectedOrderRate.getValue() == 0){
 	root.orderRate = 0.7;
 	root.textOrderRateTime.setText("Low");
@@ -27842,41 +28163,78 @@ if(ExpectedOrderRate.getValue() == 0){
 	root.textOrderRateTime.setText("High");	
 }
 
+//Set Up
+if(ExpectedSetUpTimeRob1.getValue() == 0){
+	root.setUpTime_Rob1_Rob2[0] = 1.2;
+	root.textRateTimeSetUpRobot1.setText("Slow");
+	root.textRateTimeSetUpRobot1.setColor(green);
+	root.costValues[3] = 30;
+}else if(ExpectedSetUpTimeRob1.getValue() == 1){
+	root.setUpTime_Rob1_Rob2[0] = 1;
+	root.textRateTimeSetUpRobot1.setText("Medium");
+	root.textRateTimeSetUpRobot1.setColor(darkOrange);
+	root.costValues[3] = 35;
+}else{
+	root.setUpTime_Rob1_Rob2[0] = 0.8;
+	root.textRateTimeSetUpRobot1.setText("Fast");
+	root.textRateTimeSetUpRobot1.setColor(darkRed);
+	root.costValues[3] = 40;
+}
+
+if(ExpectedSetUpTimeRob2.getValue() == 0){
+	root.setUpTime_Rob1_Rob2[1] = 1.2;
+	root.textRateTimeSetUpRobot2.setText("Slow");
+	root.textRateTimeSetUpRobot2.setColor(green);
+	root.costValues[4] = 30;	
+}else if(ExpectedSetUpTimeRob2.getValue() == 1){
+	root.setUpTime_Rob1_Rob2[1] = 1;
+	root.textRateTimeSetUpRobot2.setText("Medium");
+	root.textRateTimeSetUpRobot2.setColor(darkOrange);
+	root.costValues[4] = 35;
+}else{
+	root.setUpTime_Rob1_Rob2[1] = 0.8;
+	root.textRateTimeSetUpRobot2.setText("Fast");
+	root.textRateTimeSetUpRobot2.setColor(darkRed);
+	root.costValues[4] = 40;
+}
+
+//Processing
 if(ExpectedProcessingTimeRob1.getValue() == 0){
 	root.processingTime_Rob1_Rob2[0] = 0.5;
-	root.textRateTimeRobot1.setText("Slow");
-	root.textRateTimeRobot1.setColor(green);
-	root.costValues[3] = 10;
+	root.textRateTimeProcessingRobot1.setText("Slow");
+	root.textRateTimeProcessingRobot1.setColor(green);
+	root.costValues[5] = 10;
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[0] = 0.4;
-	root.textRateTimeRobot1.setText("Medium");
-	root.textRateTimeRobot1.setColor(darkOrange);
-	root.costValues[3] = 13;
+	root.textRateTimeProcessingRobot1.setText("Medium");
+	root.textRateTimeProcessingRobot1.setColor(darkOrange);
+	root.costValues[5] = 13;
 }else{
 	root.processingTime_Rob1_Rob2[0] = 0.3;
-	root.textRateTimeRobot1.setText("Fast");
-	root.textRateTimeRobot1.setColor(darkRed);
-	root.costValues[3] = 16;
+	root.textRateTimeProcessingRobot1.setText("Fast");
+	root.textRateTimeProcessingRobot1.setColor(darkRed);
+	root.costValues[5] = 16;
 }
 
 if(ExpectedProcessingTimeRob2.getValue() == 0){
 	root.processingTime_Rob1_Rob2[1] = 0.5;
-	root.textRateTimeRobot2.setText("Slow");
-	root.textRateTimeRobot2.setColor(green);
-	root.costValues[4] = 10;	
+	root.textRateTimeProcessingRobot2.setText("Slow");
+	root.textRateTimeProcessingRobot2.setColor(green);
+	root.costValues[6] = 10;	
 }else if(ExpectedProcessingTimeRob1.getValue() == 1){
 	root.processingTime_Rob1_Rob2[1] = 0.4;
-	root.textRateTimeRobot2.setText("Medium");
-	root.textRateTimeRobot2.setColor(darkOrange);
-	root.costValues[4] = 13;
+	root.textRateTimeProcessingRobot2.setText("Medium");
+	root.textRateTimeProcessingRobot2.setColor(darkOrange);
+	root.costValues[6] = 13;
 }else{
 	root.processingTime_Rob1_Rob2[1] = 0.3;
-	root.textRateTimeRobot2.setText("Fast");
-	root.textRateTimeRobot2.setColor(darkRed);
-	root.costValues[4] = 16;
+	root.textRateTimeProcessingRobot2.setText("Fast");
+	root.textRateTimeProcessingRobot2.setColor(darkRed);
+	root.costValues[6] = 16;
 }
 
-// Parameters Component
+// -----------------------Parameters
+//Component
 root.numberOfKanbans_Component[0] = sliderNumberKanbanC0.getIntValue();
 root.numberOfKanbans_Component[1] = sliderNumberKanbanC1.getIntValue();
 root.numberOfKanbans_Component[2] = sliderNumberKanbanC2.getIntValue();
@@ -27893,7 +28251,7 @@ root.textLotSizeC0.setText(String.valueOf(sliderLotSizeC0.getIntValue()));
 root.textLotSizeC1.setText(String.valueOf(sliderLotSizeC1.getIntValue()));
 root.textLotSizeC2.setText(String.valueOf(sliderLotSizeC2.getIntValue()));
 
-// Parameters Item
+//Item
 root.numberOfKanbans_Item[0] = sliderNumberKanbanI0.getIntValue();
 root.numberOfKanbans_Item[1] = sliderNumberKanbanI1.getIntValue();
 root.numberOfKanbans_Item[2] = sliderNumberKanbanI2.getIntValue();
@@ -27929,7 +28287,7 @@ root.costValues[2] = 19;]]></BeforeSimulationRunCode>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1739224994401</Id>
 					<Name><![CDATA[checkParametrization]]></Name>
-					<X>290</X><Y>360</Y>
+					<X>20</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -27977,7 +28335,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
 					<Width>1200</Width>
-					<Height>270</Height>
+					<Height>530</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
 					<FillMaterial>null</FillMaterial>
@@ -28008,7 +28366,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1737549486361</Id>
 					<Name><![CDATA[text]]></Name>
-					<X>610</X><Y>20</Y>
+					<X>190</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28017,7 +28375,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-12490271</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Kanban Modell Parametrization]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28029,7 +28387,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738755319872</Id>
 					<Name><![CDATA[text15]]></Name>
-					<X>330</X><Y>133</Y>
+					<X>293</X><Y>113</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28038,8 +28396,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Uncertainty Order]]></Text>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Uncertainty]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28051,7 +28409,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738755430814</Id>
 					<Name><![CDATA[UncertaintyChangeOrder]]></Name>
-					<X>330</X><Y>153</Y>
+					<X>283</X><Y>133</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28074,7 +28432,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738756829070</Id>
 					<Name><![CDATA[text17]]></Name>
-					<X>611</X><Y>133</Y>
+					<X>461</X><Y>113</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28083,8 +28441,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Uncertainty Processing Robot 1]]></Text>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Uncertainty Processing]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28095,8 +28453,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Control Type="RadioButtons">
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738756829076</Id>
-					<Name><![CDATA[UncertaintyChangeRobotProcessing1]]></Name>
-					<X>611</X><Y>153</Y>
+					<Name><![CDATA[UncertaintyChangeProcessingRob1]]></Name>
+					<X>455</X><Y>133</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28119,7 +28477,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738756889673</Id>
 					<Name><![CDATA[text18]]></Name>
-					<X>913</X><Y>133</Y>
+					<X>833</X><Y>113</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28128,8 +28486,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Uncertainty Processing Robot 2]]></Text>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Uncertainty Processing]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28140,8 +28498,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Control Type="RadioButtons">
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738756889675</Id>
-					<Name><![CDATA[UncertaintyChangeRobotProcessing2]]></Name>
-					<X>913</X><Y>153</Y>
+					<Name><![CDATA[UncertaintyChangeProcessingRob2]]></Name>
+					<X>825</X><Y>133</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28164,7 +28522,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738757171180</Id>
 					<Name><![CDATA[text1]]></Name>
-					<X>10</X><Y>81</Y>
+					<X>100</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28173,8 +28531,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-12490271</Color>
-					<Text><![CDATA[Environment]]></Text>
+					<Color>-16777216</Color>
+					<Text><![CDATA[General]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>16</Size>
@@ -28185,7 +28543,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Rectangle>
 					<Id>1738757199276</Id>
 					<Name><![CDATA[rectangle2]]></Name>
-					<X>0</X><Y>340</Y>
+					<X>275</X><Y>340</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28199,7 +28557,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>600</Width>
+					<Width>462</Width>
 					<Height>260</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
@@ -28208,7 +28566,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738757491926</Id>
 					<Name><![CDATA[text19]]></Name>
-					<X>330</X><Y>230</Y>
+					<X>293</X><Y>210</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28217,8 +28575,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Expected Order Rate]]></Text>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Expected Arrival Rate]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28229,7 +28587,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738757786442</Id>
 					<Name><![CDATA[text20]]></Name>
-					<X>614</X><Y>230</Y>
+					<X>464</X><Y>210</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28238,8 +28596,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Expected Processing Time Robot 1]]></Text>
+					<Color>-14774017</Color>
+					<Text><![CDATA[Expected Processing Time]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28250,7 +28608,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738757841482</Id>
 					<Name><![CDATA[text21]]></Name>
-					<X>910</X><Y>228</Y>
+					<X>835</X><Y>210</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28259,8 +28617,8 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
-					<Text><![CDATA[Expected Processing Time Robot 2]]></Text>
+					<Color>-14774017</Color>
+					<Text><![CDATA[Expected Processing Time]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
@@ -28271,7 +28629,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Rectangle>
 					<Id>1738758259481</Id>
 					<Name><![CDATA[rectangle3]]></Name>
-					<X>600</X><Y>340</Y>
+					<X>735</X><Y>340</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28285,7 +28643,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<LineColor>-16777216</LineColor>
 					<LineMaterial>null</LineMaterial>
 					<LineStyle>SOLID</LineStyle>
-					<Width>600</Width>
+					<Width>465</Width>
 					<Height>260</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
@@ -28295,7 +28653,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738759409165</Id>
 					<Name><![CDATA[ExpectedOrderRate]]></Name>
-					<X>330</X><Y>250</Y>
+					<X>283</X><Y>233</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28320,7 +28678,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738759513124</Id>
 					<Name><![CDATA[ExpectedProcessingTimeRob1]]></Name>
-					<X>610</X><Y>250</Y>
+					<X>455</X><Y>233</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28345,7 +28703,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738759532441</Id>
 					<Name><![CDATA[ExpectedProcessingTimeRob2]]></Name>
-					<X>910</X><Y>250</Y>
+					<X>825</X><Y>233</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28369,7 +28727,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Group>
 					<Id>1738764793235</Id>
 					<Name><![CDATA[group]]></Name>
-					<X>240</X><Y>470</Y>
+					<X>410</X><Y>470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28383,7 +28741,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738757291646</Id>
 					<Name><![CDATA[text2]]></Name>
-					<X>-230</X><Y>-120</Y>
+					<X>-50</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28392,7 +28750,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-12490271</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Planning Parameters Component]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28405,7 +28763,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738758280959</Id>
 					<Name><![CDATA[sliderNumberKanbanC0]]></Name>
-					<X>-120</X><Y>-70</Y>
+					<X>-100</X><Y>-70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28428,7 +28786,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738758280961</Id>
 					<Name><![CDATA[text22]]></Name>
-					<X>-115</X><Y>-85</Y>
+					<X>-95</X><Y>-85</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28437,7 +28795,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans C0]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28450,7 +28808,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738758322803</Id>
 					<Name><![CDATA[sliderNumberKanbanC1]]></Name>
-					<X>-120</X><Y>0</Y>
+					<X>-100</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28473,7 +28831,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738758322805</Id>
 					<Name><![CDATA[text23]]></Name>
-					<X>-115</X><Y>-15</Y>
+					<X>-95</X><Y>-15</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28482,7 +28840,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans C1]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28495,7 +28853,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738758341769</Id>
 					<Name><![CDATA[sliderNumberKanbanC2]]></Name>
-					<X>-120</X><Y>67</Y>
+					<X>-100</X><Y>67</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28518,7 +28876,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738758341771</Id>
 					<Name><![CDATA[text26]]></Name>
-					<X>-115</X><Y>52</Y>
+					<X>-95</X><Y>52</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28527,7 +28885,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans C2]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28572,7 +28930,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size C0]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28617,7 +28975,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size C1]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28662,7 +29020,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size C2]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -28674,7 +29032,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773104804</Id>
 					<Name><![CDATA[text4]]></Name>
-					<X>-120</X><Y>-40</Y>
+					<X>-100</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28696,7 +29054,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773104808</Id>
 					<Name><![CDATA[text5]]></Name>
-					<X>0</X><Y>-40</Y>
+					<X>20</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28718,7 +29076,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773104810</Id>
 					<Name><![CDATA[text6]]></Name>
-					<X>-60</X><Y>-40</Y>
+					<X>-40</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28740,7 +29098,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773114846</Id>
 					<Name><![CDATA[text7]]></Name>
-					<X>-120</X><Y>30</Y>
+					<X>-100</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28762,7 +29120,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773114849</Id>
 					<Name><![CDATA[text8]]></Name>
-					<X>0</X><Y>30</Y>
+					<X>20</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28784,7 +29142,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773114851</Id>
 					<Name><![CDATA[text9]]></Name>
-					<X>-60</X><Y>30</Y>
+					<X>-40</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28806,7 +29164,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773116584</Id>
 					<Name><![CDATA[text10]]></Name>
-					<X>-120</X><Y>97</Y>
+					<X>-100</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28828,7 +29186,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773116587</Id>
 					<Name><![CDATA[text11]]></Name>
-					<X>0</X><Y>97</Y>
+					<X>20</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -28850,7 +29208,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773116589</Id>
 					<Name><![CDATA[text12]]></Name>
-					<X>-60</X><Y>97</Y>
+					<X>-40</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29073,7 +29431,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Group>
 					<Id>1738764833860</Id>
 					<Name><![CDATA[group1]]></Name>
-					<X>838</X><Y>470</Y>
+					<X>918</X><Y>470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29087,7 +29445,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738764833862</Id>
 					<Name><![CDATA[text3]]></Name>
-					<X>-120</X><Y>-120</Y>
+					<X>60</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29096,7 +29454,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-12490271</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Planning Parameters Items]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29109,7 +29467,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738764833864</Id>
 					<Name><![CDATA[sliderNumberKanbanI0]]></Name>
-					<X>-120</X><Y>-70</Y>
+					<X>-110</X><Y>-70</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29132,7 +29490,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738764833866</Id>
 					<Name><![CDATA[text42]]></Name>
-					<X>-115</X><Y>-85</Y>
+					<X>-105</X><Y>-85</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29141,7 +29499,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans I0]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29154,7 +29512,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738764833874</Id>
 					<Name><![CDATA[sliderNumberKanbanI1]]></Name>
-					<X>-120</X><Y>0</Y>
+					<X>-110</X><Y>0</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29177,7 +29535,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738764833876</Id>
 					<Name><![CDATA[text46]]></Name>
-					<X>-115</X><Y>-15</Y>
+					<X>-105</X><Y>-15</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29186,7 +29544,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans I1]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29199,7 +29557,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1738764833884</Id>
 					<Name><![CDATA[sliderNumberKanbanI2]]></Name>
-					<X>-120</X><Y>67</Y>
+					<X>-110</X><Y>67</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29222,7 +29580,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738764833886</Id>
 					<Name><![CDATA[text50]]></Name>
-					<X>-115</X><Y>52</Y>
+					<X>-105</X><Y>52</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29231,7 +29589,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Number of Kanbans I2]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29276,7 +29634,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size I0]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29321,7 +29679,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size I1]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29366,7 +29724,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-16777216</Color>
+					<Color>-14774017</Color>
 					<Text><![CDATA[Lot Size I2]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
@@ -29378,7 +29736,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773126854</Id>
 					<Name><![CDATA[text32]]></Name>
-					<X>-120</X><Y>-40</Y>
+					<X>-110</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29400,7 +29758,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773126858</Id>
 					<Name><![CDATA[text33]]></Name>
-					<X>0</X><Y>-40</Y>
+					<X>10</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29422,7 +29780,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773126860</Id>
 					<Name><![CDATA[text35]]></Name>
-					<X>-60</X><Y>-40</Y>
+					<X>-50</X><Y>-40</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29444,7 +29802,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773128373</Id>
 					<Name><![CDATA[text36]]></Name>
-					<X>-120</X><Y>30</Y>
+					<X>-110</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29466,7 +29824,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773128375</Id>
 					<Name><![CDATA[text37]]></Name>
-					<X>0</X><Y>30</Y>
+					<X>10</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29488,7 +29846,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773128377</Id>
 					<Name><![CDATA[text39]]></Name>
-					<X>-60</X><Y>30</Y>
+					<X>-50</X><Y>30</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29510,7 +29868,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773129807</Id>
 					<Name><![CDATA[text40]]></Name>
-					<X>-120</X><Y>97</Y>
+					<X>-110</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29532,7 +29890,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773129810</Id>
 					<Name><![CDATA[text41]]></Name>
-					<X>0</X><Y>97</Y>
+					<X>10</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29554,7 +29912,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1738773129812</Id>
 					<Name><![CDATA[text43]]></Name>
-					<X>-60</X><Y>97</Y>
+					<X>-50</X><Y>97</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29778,7 +30136,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1739132338906</Id>
 					<Name><![CDATA[simulationTime]]></Name>
-					<X>120</X><Y>125</Y>
+					<X>120</X><Y>110</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29799,7 +30157,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1739132961112</Id>
 					<Name><![CDATA[text56]]></Name>
-					<X>10</X><Y>130</Y>
+					<X>10</X><Y>115</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29820,12 +30178,11 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1739142236332</Id>
 					<Name><![CDATA[text57]]></Name>
-					<X>165</X><Y>130</Y>
+					<X>165</X><Y>115</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
@@ -29842,7 +30199,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1739146069369</Id>
 					<Name><![CDATA[textComponentCosts]]></Name>
-					<X>180</X><Y>205</Y>
+					<X>170</X><Y>405</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29852,18 +30209,18 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[1]]></Text>
+					<Text><![CDATA[1 [cent/min]]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
-						<Style>1</Style>
+						<Style>0</Style>
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Text>
 					<Id>1739146446064</Id>
 					<Name><![CDATA[textCostStructure]]></Name>
-					<X>10</X><Y>175</Y>
+					<X>10</X><Y>405</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29873,26 +30230,26 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Cost Values [cent/min]: 
-
-- Components
+					<Text><![CDATA[- Components
 
 - Items
 
 - Tardiness
 
+- Set-Up
+
 - Processing]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
-						<Style>1</Style>
+						<Style>0</Style>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
 					<Id>1739146618520</Id>
 					<Name><![CDATA[textItemCosts]]></Name>
-					<X>180</X><Y>235</Y>
+					<X>170</X><Y>435</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29902,18 +30259,18 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[2]]></Text>
+					<Text><![CDATA[2 [cent/min]]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
-						<Style>1</Style>
+						<Style>0</Style>
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Text>
 					<Id>1739146638593</Id>
 					<Name><![CDATA[textTardinessCosts]]></Name>
-					<X>179</X><Y>266</Y>
+					<X>172</X><Y>466</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29923,18 +30280,18 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[19]]></Text>
+					<Text><![CDATA[19 [cent/min]]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
-						<Style>1</Style>
+						<Style>0</Style>
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Text>
 					<Id>1739146654701</Id>
 					<Name><![CDATA[textProcessingTime]]></Name>
-					<X>179</X><Y>296</Y>
+					<X>181</X><Y>526</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29944,18 +30301,18 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Time Dependent {10 ; 13 ; 16} ]]></Text>
+					<Text><![CDATA[{10 ; 13 ; 16} [cent/min]]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
-						<Style>1</Style>
+						<Style>0</Style>
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
 				<Rectangle>
 					<Id>1739192665715</Id>
 					<Name><![CDATA[markerLotSizeC0]]></Name>
-					<X>540</X><Y>400</Y>
+					<X>680</X><Y>400</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29977,7 +30334,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Rectangle>
 					<Id>1739225105871</Id>
 					<Name><![CDATA[markerLotSizeC1]]></Name>
-					<X>540</X><Y>470</Y>
+					<X>680</X><Y>470</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29999,7 +30356,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Rectangle>
 					<Id>1739225114246</Id>
 					<Name><![CDATA[markerLotSizeC2]]></Name>
-					<X>540</X><Y>540</Y>
+					<X>680</X><Y>540</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -30021,7 +30378,7 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 				<Text>
 					<Id>1739225151422</Id>
 					<Name><![CDATA[text59]]></Name>
-					<X>535</X><Y>370</Y>
+					<X>675</X><Y>370</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -30035,6 +30392,527 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Line>
+					<Id>1740562645944</Id>
+					<Name><![CDATA[line]]></Name>
+					<X>275</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>0</Dx>
+					<Dy>270</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Line>
+					<Id>1740562659418</Id>
+					<Name><![CDATA[line1]]></Name>
+					<X>440</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>0</Dx>
+					<Dy>270</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1740562721666</Id>
+					<Name><![CDATA[text61]]></Name>
+					<X>340</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Order]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740562829561</Id>
+					<Name><![CDATA[text63]]></Name>
+					<X>580</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Robot 1]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740562854233</Id>
+					<Name><![CDATA[text60]]></Name>
+					<X>645</X><Y>113</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Uncertainty Set-Up]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Control Type="RadioButtons">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1740562878159</Id>
+					<Name><![CDATA[UncertaintyChangSetUpRob1]]></Name>
+					<X>635</X><Y>133</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="150" Height="67">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[Deterministic]]></Button>
+						<Button><![CDATA[Exponential Distribution]]></Button>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1740562923374</Id>
+					<Name><![CDATA[text64]]></Name>
+					<X>644</X><Y>210</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Expected Set-Up Time]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740562956741</Id>
+					<Name><![CDATA[text65]]></Name>
+					<X>980</X><Y>80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Robot 2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Line>
+					<Id>1740563081752</Id>
+					<Name><![CDATA[line2]]></Name>
+					<X>815</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>0</Dx>
+					<Dy>270</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1740563136201</Id>
+					<Name><![CDATA[text66]]></Name>
+					<X>1046</X><Y>113</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Uncertainty Set-Up]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Control Type="RadioButtons">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1740563136203</Id>
+					<Name><![CDATA[UncertaintyChangSetUpRob2]]></Name>
+					<X>1036</X><Y>133</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="150" Height="67">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<DefaultValueCode><![CDATA[0]]></DefaultValueCode>
+						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[Deterministic]]></Button>
+						<Button><![CDATA[Exponential Distribution]]></Button>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1740563136205</Id>
+					<Name><![CDATA[text67]]></Name>
+					<X>1040</X><Y>210</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-8388480</Color>
+					<Text><![CDATA[Expected Set-Up Time]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Control Type="RadioButtons">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1740563136207</Id>
+					<Name><![CDATA[ExpectedSetUpTimeRob2]]></Name>
+					<X>1036</X><Y>233</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="150" Height="77">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[Slow [30 cent / min]]]></Button>
+						<Button><![CDATA[Medium [35 cent / min]]]></Button>
+						<Button><![CDATA[Fast [40 cent / min]]]></Button>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="RadioButtons">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1740562923376</Id>
+					<Name><![CDATA[ExpectedSetUpTimeRob1]]></Name>
+					<X>635</X><Y>233</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="150" Height="77">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor>-16777216</TextColor>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<DefaultValueCode><![CDATA[1]]></DefaultValueCode>
+						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[Slow [30 cent / min]]]></Button>
+						<Button><![CDATA[Medium [35 cent / min]]]></Button>
+						<Button><![CDATA[Fast [40 cent / min]]]></Button>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1740565474782</Id>
+					<Name><![CDATA[textTardinessCosts2]]></Name>
+					<X>181</X><Y>495</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[{30 ; 35 ; 40} [cent/set-up]]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740569423835</Id>
+					<Name><![CDATA[text69]]></Name>
+					<X>70</X><Y>190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Demand
+Proportions]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570011885</Id>
+					<Name><![CDATA[text71]]></Name>
+					<X>10</X><Y>230</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[I0
+
+I1
+
+I2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570051565</Id>
+					<Name><![CDATA[text72]]></Name>
+					<X>180</X><Y>190</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Expected
+Order Size]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570096880</Id>
+					<Name><![CDATA[textComponentCosts1]]></Name>
+					<X>90</X><Y>230</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[0.35	
+
+0.15
+
+0.50]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570136315</Id>
+					<Name><![CDATA[textComponentCosts2]]></Name>
+					<X>210</X><Y>230</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[1.5
+
+1.5
+
+1.5]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>CENTER</Alignment>
+				</Text>
+				<Text>
+					<Id>1740570272971</Id>
+					<Name><![CDATA[text73]]></Name>
+					<X>15</X><Y>380</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Cost Values]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Control Type="EditBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1740574442754</Id>
+					<Name><![CDATA[link]]></Name>
+					<X>1010</X><Y>30</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="160" Height="25">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<FillColor>-3939100</FillColor>
+						<TextColor>-16777216</TextColor>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<DefaultValueCode><![CDATA["https://miro.com/welcomeonboard/cmVTV0R5dWJMNUZ5c3AzWlNuOEJzOEdTd1NMUFJFZ3gySHJyYVdNRUE1aUF2T3d5ZGs1MzY1THVJcVhMb2lIclZURkJqY0pkL3dBTUQraFN6NGRScEV0QTBjUE9oWHRac3Z1UWdIOFFHWVVNcTFCb29aMVhDTFdUVFR2Q002RnFBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=842959864526"]]></DefaultValueCode>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
+				</Control>
+				<Text>
+					<Id>1740574519553</Id>
+					<Name><![CDATA[text68]]></Name>
+					<X>950</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Link:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>16</Size>
 						<Style>1</Style>
 					</Font>
 					<Alignment>LEFT</Alignment>
@@ -30082,10 +30960,13 @@ if((sliderLotSizeC2.getIntValue() * sliderNumberKanbanC2.getIntValue())
 					<ParameterName><![CDATA[uncertaintyProcessing_Rob1_Rob2]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[setUpTime]]></ParameterName>
+					<ParameterName><![CDATA[setUpTime_Rob1_Rob2]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[costValues]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[uncertaintySetUp_Rob1_Rob2]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
