@@ -1,6 +1,6 @@
-# Schulworkshop 2025
+# Schulworkshop 2026
 
-Hier finden Sie Unterlagen des Schulworkshops 2025 an der FH Steyr.
+Hier finden Sie Unterlagen des Schulworkshops 2026 an der FH Steyr.
 
 ## 📂 Präsentation:
 [Präsentation](Schulworkshop_2025.pdf?raw=true)
