@@ -3,7 +3,7 @@
 Hier finden Sie Unterlagen des Schulworkshops 2026 an der FH Steyr.
 
 ## 📂 Präsentation:
-[Präsentation](Schulworkshop_2025.pdf?raw=true)
+[Präsentation](Schulworkshop_2026.pdf?raw=true)
 
 ## 🎥 Videos:
 - [▶️ Kanban VR Modell](Kanban_VR_Modell_compressed.mp4?raw=true)
